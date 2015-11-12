@@ -23,16 +23,20 @@
 	<body>
 	  <div id="fullpage">
 		<div class="section">
-			<div class="container">
-			<h1>Rubrik</h1>
-			<p>
-				Hej hej hej <a href="#">This is a link</a>
-			</p>
-			</div>
+			{% include "app/views/modules/me/me.nunjucks" %}
 		</div>
-		<div class="section">Some section</div>
-		<div class="section">Some section</div>
-		<div class="section">Some section</div>
+		
+	    <div class="section">
+			{% include "app/views/modules/cv/cv.nunjucks" %}
+	    </div>
+		  
+		<div class="section">
+			{% include "app/views/modules/portfolio/portfolio.nunjucks" %}
+	  	</div>
+		  
+		<div class="section fp-auto-height">
+			{% include "app/views/modules/contact/contact.nunjucks" %}
+		</div>
 	  </div>
 	  
 	  <!-- build:js(./app/) /scripts/vendor.min.js -->

@@ -25,7 +25,7 @@ gulp.task('templates', 'Compile templates', ['templates:prepareData', 'useref'],
   var dest = build.isBuild() ? config.templates.destBuild : config.templates.dest;
   var srcDir = build.isBuild() ? config.templates.srcDir : config.templates.srcBuildDir;
   
-  nunjucksRender.nunjucks.configure(srcDir, {watch: false});
+  //nunjucksRender.nunjucks.configure(srcDir, {watch: false});
   
   return gulp.src(src)
     .pipe(plumber(handleError))
