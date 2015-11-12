@@ -1,16 +1,20 @@
 $icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 
 @import "palette.sass";
+@import "modules/portfolio.scss";
+@import "modules/cv.scss";
+@import "modules/contact.scss";
+@import "modules/me.scss";
 
 //Set bootstrap variables from palette
-$text-color: $primary-text-color;
+$text-color: $primary-color-text;
 $link-color: $secondary-text-color;
 
 // bower:scss
 @import "../../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 @import "../../bower_components/fullpage.js/jquery.fullPage.scss";
 // endbower
-
+ 
 
 .section {
 	background-color:$primary-color;

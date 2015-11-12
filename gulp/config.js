@@ -174,7 +174,7 @@ module.exports.styles = {
 // Templates task config
 module.exports.templates = {
   
-  src: path.join(app, views, '*.nunjucks'),
+  src: path.join(app, views, '**/*.nunjucks'),
   srcBuild: path.join(tmp, 'nunjucks/*.nunjucks'),
   srcDir: path.join(app, views),
   srcBuildDir: tmp,
@@ -218,7 +218,7 @@ module.exports.watch = {
 // Wiredep task config
 module.exports.wiredep = {
   sass: {
-    src: path.join(app, styles, '/*.scss'),
+    src: path.join(app, styles, '**/*.scss'),
     dest: path.join(app, styles),
     cfg: {
       ignorePath: '',
