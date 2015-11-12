@@ -1,0 +1,14 @@
+$icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
+
+// bower:scss
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "../../bower_components/fullpage.js/jquery.fullPage.scss";
+// endbower
+
+.section {
+	background-color:blue;
+}
+
+.section:last-child {
+	background-color:green;
+}
