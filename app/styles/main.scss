@@ -1,14 +1,21 @@
 $icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 
+@import "palette.sass";
+
+//Set bootstrap variables from palette
+$text-color: $primary-text-color;
+$link-color: $secondary-text-color;
+
 // bower:scss
 @import "../../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 @import "../../bower_components/fullpage.js/jquery.fullPage.scss";
 // endbower
 
+
 .section {
-	background-color:blue;
+	background-color:$primary-color;
 }
 
 .section:last-child {
-	background-color:green;
+	background-color:$primary-color-dark;
 }

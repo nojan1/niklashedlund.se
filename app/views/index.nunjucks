@@ -22,7 +22,14 @@
 	</head>
 	<body>
 	  <div id="fullpage">
-		<div class="section">Some section</div>
+		<div class="section">
+			<div class="container">
+			<h1>Rubrik</h1>
+			<p>
+				Hej hej hej <a href="#">This is a link</a>
+			</p>
+			</div>
+		</div>
 		<div class="section">Some section</div>
 		<div class="section">Some section</div>
 		<div class="section">Some section</div>
