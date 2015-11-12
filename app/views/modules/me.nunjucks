@@ -2,4 +2,12 @@
 	<h1 class="section-topic">
 		Me
 	</h1>
+	<div class="row">
+		<div class="col-md-6">
+			<p>Jag heter alltså Niklas Hedlund och är 26 år gammal. Jag är uppvuxen i en liten by i Gagnefs kommun med en låg befolkning där alla i princip kände alla. En annan del var närheten till naturen och framför allt skogen vilket är något jag alltid gillat, som en naturlig effekt av det så började jag i unga år med orientering vilket är något jag fotfarande sysslar med. När jag tittar tillbaka så här i efterhand kan jag se att orienteringen fick mig att växa som person i det att jag mera självständigt stark. Med resultatet att jag idag vet att jag alltid kan klara det som behövs i den aktuella situationen . Om det består av en fysisk ansträngning, att lära in en stor mängd special kompetens eller möta en deadline spelar inte så stor roll.</p>
+		</div>
+		<div class="col-md-6">
+			<img src="../../../images/me.jpg" class="profilepic">
+		</div>
+	</div>
 </div>
