@@ -1,5 +1,6 @@
 $icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 
+@import "fonts.scss";
 @import "palette.sass";
 @import "modules/portfolio.scss";
 @import "modules/cv.scss";
@@ -18,15 +19,26 @@ $link-color: $secondary-text-color;
 
 .section {
 	background-color:$primary-color;
+	
+	.container-colored {
+		background-color: $primary-color-dark;
+		border-radius: 5px;
+		padding:30px;
+	}
 }
 
 .section:last-child {
 	background-color:$primary-color-dark;
+	
+	.container {
+		padding:5px;	
+	}
 }
 
 .section-topic {
-	margin: 0 auto;
+	font-family:CodeBold;
 	color:$divider-color;
-	text-transform: capitalize;
+	text-transform: uppercase;
 	padding-bottom: 30px;
+	text-align: center;
 }
