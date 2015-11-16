@@ -22,20 +22,27 @@
 	  <!-- endbuild -->
 	</head>
 	<body>
+        <ul id="menu">
+            <li data-menuanchor="me" class="active"><a href="#me">Jag</a></li>
+            <li data-menuanchor="cv"><a href="#cv">CV</a></li>
+            <li data-menuanchor="portfolio"><a href="#portfolio">Portfolio</a></li>
+            <li data-menuanchor="contact"><a href="#contact">Kontakt</a></li>
+        </ul>
+        
 	  <div id="fullpage">
-		<div class="section">
+		<div class="section" id="section0">
 			{% include "app/views/modules/me.nunjucks" %}
 		</div>
 		
-	    <div class="section">
+	    <div class="section" id="section1">
 			{% include "app/views/modules/cv.nunjucks" %}
 	    </div>
 		  
-		<div class="section">
+		<div class="section" id="section2">
 			{% include "app/views/modules/portfolio.nunjucks" %}
 	  	</div>
 		  
-		<div class="section fp-auto-height">
+		<div class="section fp-auto-height" id="section3">
 			{% include "app/views/modules/contact.nunjucks" %}
 		</div>
 	  </div>
