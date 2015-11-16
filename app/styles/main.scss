@@ -24,6 +24,8 @@ $link-color: $secondary-text-color;
 		background-color: $primary-color-dark;
 		border-radius: 5px;
 		padding:30px;
+        
+        min-height: 500px;
 	}
 }
 
@@ -41,4 +43,5 @@ $link-color: $secondary-text-color;
 	text-transform: uppercase;
 	padding-bottom: 30px;
 	text-align: center;
+    font-size:5em;
 }

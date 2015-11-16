@@ -30,7 +30,6 @@ $(document).ready(function(){
     ];
 
     $('#skill-cloud').jQCloud(skills, {
-        autoResize: true,
-        shape: 'rectangular'
+        autoResize: true
     });
 });
