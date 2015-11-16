@@ -16,6 +16,7 @@
 	  <!-- build:css({.tmp,app}) /styles/main.min.css -->
 	  <!-- bower:css -->
 	  <link rel="stylesheet" href="bower_components/fullpage.js/jquery.fullPage.css" />
+	  <link rel="stylesheet" href="bower_components/jqcloud2/dist/jqcloud.css" />
 	  <!-- endbower -->
 	  <link rel="stylesheet" href="/styles/main.css"></link>
 	  <!-- endbuild -->
@@ -46,6 +47,7 @@
 	  <script src="bower_components/fullpage.js/jquery.fullPage.js"></script>
 	  <script src="bower_components/fullpage.js/vendors/jquery.easings.min.js"></script>
 	  <script src="bower_components/fullpage.js/vendors/jquery.slimscroll.min.js"></script>
+	  <script src="bower_components/jqcloud2/dist/jqcloud.js"></script>
 	  <!-- endbower -->  
 	  <!-- endbuild -->
 	  
@@ -53,12 +55,8 @@
 	  <!-- endbuild -->
 	  
 	  <!-- build:js(.tmp) /scripts/main.min.js -->
+        <script src="scripts/main.js"></script>
+        <script src="scripts/cv.js"></script>
 	  <!-- endbuild -->
-	  
-	  <script>
-		 $(document).ready(function(){
-			$('#fullpage').fullpage();
-		 });
-	  </script>
 	</body>
 </html>

@@ -1,48 +1,14 @@
-<div class="container container-colored">
-	<h1 class="section-topic">
-		SKILLZ
-	</h1>
-	
-	<div class="row">
-		<div class="col-md-4">
-			<ul>
-				<li>PHP</li>
-				<li>Arch Linux</li>
-				<li>Debian</li>
-				<li>Python</li>
-				<li>Bash</li>
-				<li>Cisco IOS</li>
-				<li>Nätverk</li>
-				<li>Mysql</li>
-				<li>Windows</li>
-				<li>.NET</li>
-				<li>C#</li>
-				<li>Java</li>
-				<li>C / C++</li>				
-			</ul>
-		</div>
-		<div class="col-md-4">
-			<p>
-				Utbildaded IT-Forensiker som nu jobbar som systemutvecklare. Real geek, Star trek ftw :D
-			</p>
-		</div>
-		<div class="col-md-4">
-			<ul>
-				<li>Android</li>
-				<li>HTML</li>
-				<li>Javascript</li>
-				<li>CSS</li>
-				<li>Photoshop</li>
-				<li>Angular JS</li>
-				<li>Gulp</li>
-				<li>Blender</li>
-				<li>WCF</li>
-				<li>WPF</li>
-				<li>After effects</li>
-				<li>Premiere</li>
-				<li>AVR</li>
-				<li>Arduino</i>
-			</ul>
-		</div>
-	</div>
+<div class="slide">
+    <div class="container container-colored">
+        <h1 class="section-topic">
+            SKILLZ
+        </h1>
+
+        <div id="skill-cloud"></div>
+    </div>
+</div>
+<div class="slide">
+    <div class="container">
+         <p>Utbildaded IT-Forensiker som nu jobbar som systemutvecklare. Real geek, Star trek ftw :D</p>
+    </div>
 </div>

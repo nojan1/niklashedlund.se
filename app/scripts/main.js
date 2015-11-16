@@ -1,3 +1,3 @@
-const myApp = myApp || {};
-
-console.log('Hodd luck!');
+ $(document).ready(function(){
+     $('#fullpage').fullpage();
+ });

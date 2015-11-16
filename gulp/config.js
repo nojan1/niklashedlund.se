@@ -233,5 +233,5 @@ module.exports.wiredep = {
       ignorePath: '../../',
       overides: {}
     }
-  } 
+  }
 }
