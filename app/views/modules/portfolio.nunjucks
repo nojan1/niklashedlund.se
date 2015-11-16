@@ -3,19 +3,19 @@
 	<div class="row">
 		<div class="col-md-4">
 			<a href="https://github.com/nojan1"  target="_blank">
-				<img src="../../../images/github-icon.svg" class="img-responsive">
+				<img src="images/github-icon.svg" class="img-responsive">
 			</a>
 			<h1>GitHub</h1>
 		</div>
 		<div class="col-md-4">
 			<a href="http://se.linkedin.com/pub/niklas-hedlund/82/70a/3a4/"  target="_blank">
-				<img src="../../../images/linkedin-icon.svg" class="img-responsive" style="max-width:256px;">
+				<img src="images/linkedin-icon.svg" class="img-responsive" style="max-width:256px;">
 			</a>
 			<h1>LinkedIn</h1>
 		</div>
 		<div class="col-md-4">
 			<a href="https://www.flickr.com/photos/113182194@N07"  target="_blank">
-				<img src="../../../images/flickr-icon.svg" class="img-responsive">
+				<img src="images/flickr-icon.svg" class="img-responsive">
 			</a>
 			<h1>Flickr</h1>
 		</div>

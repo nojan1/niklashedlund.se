@@ -1,4 +1,5 @@
 {
-  "scripts/main.min.js": "scripts/main-2750a28677.min.js",
-  "styles/main.min.css": "styles/main-aa52f7374b.min.css"
+  "scripts/main.min.js": "scripts/main-d2eb069ed8.min.js",
+  "scripts/vendor.min.js": "scripts/vendor-be253fa657.min.js",
+  "styles/main.min.css": "styles/main-772016aa37.min.css"
 }

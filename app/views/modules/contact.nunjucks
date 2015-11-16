@@ -8,12 +8,12 @@
 	<ul class="list-inline pull-right social-icons">
 		<li>
 			<a href="https://www.facebook.com/nojan.hedlund" target="_blank">
-				<img src="../../../images/facebook.svg">
+				<img src="images/facebook.svg">
 			</a>
 		</li>
 		<li>
 			<a href="http://www.hitta.se/niklas+hedlund/borl%C3%A4nge/person/dP_CCmkkJA?vad=Niklas+Hedlund&var=Borl%C3%A4nge#" target="_blank">
-				<img src="../../../images/hittase.png">
+				<img src="images/hittase.png">
 			</a>
 		</li>
 	</ul>
