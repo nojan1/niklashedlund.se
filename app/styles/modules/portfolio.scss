@@ -10,5 +10,35 @@
 		font-weight: normal;
 		margin-bottom: 0;
         color:$primary-color-text;
+        
+        @media (max-width: 992px) {
+            font-size:4em;
+        } 
 	}
+}
+
+.socialmedia-container-narrow {
+    img {
+        width:90px;
+    }
+    
+    table {
+        margin:0 auto;
+    }
+    
+    h1 {
+        font-size:5em;
+		font-weight: normal;
+		margin-bottom: 0;
+        color:$primary-color-text;
+    }
+    
+    tr {
+        padding-bottom: 10px;
+    }
+    
+    td:nth-child(2) {
+        padding-left:30px;
+        text-align: left;
+    }
 }
