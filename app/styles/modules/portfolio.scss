@@ -5,9 +5,10 @@
 		margin: 0 auto;	
 	}
 	
-	h1 {
+	.platform-name {
 		font-size:5em;
 		font-weight: normal;
 		margin-bottom: 0;
+        color:$primary-color-text;
 	}
 }

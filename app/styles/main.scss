@@ -19,10 +19,10 @@ $link-color: $secondary-text-color;
  
 
 .section {
-	background-color:$primary-color;
+	background-color:$primary-color-dark;
 	
 	.container-colored {
-		background-color: $primary-color-dark;
+		//background-color: $primary-color;
 		border-radius: 5px;
 		padding:30px;
         
@@ -31,7 +31,7 @@ $link-color: $secondary-text-color;
 }
 
 .section:last-child {
-	background-color:$primary-color-dark;
+	background-color: darken($primary-color-dark, 30%);
 	
 	.container {
 		padding:5px;	
