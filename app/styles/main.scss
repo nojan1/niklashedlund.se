@@ -21,6 +21,11 @@ $link-color: $secondary-text-color;
 .section {
 	background-color:$primary-color-dark;
 	
+	@media (max-width: 992px) {
+    	padding-left:40px;
+		padding-right:40px;
+	} 
+	
 	.container-colored {
 		//background-color: $primary-color;
 		border-radius: 5px;
