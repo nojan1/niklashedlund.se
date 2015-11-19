@@ -5,10 +5,27 @@
         </h1>
         <div class="row">
             <div class="col-md-6">
-                <img src="images/me.jpg" class="profilepic push-right">
+                <img src="images/me.jpg" class="profilepic pull-right img-responsive">
             </div>
             <div class="col-md-6">
                 <h2>Niklas Hedlund</h2>
+				<ul>
+					<li>
+						26 år gammal
+					</li>
+					<li>
+						Elektrisk tandborste, blå
+					</li>
+					<li>
+						Skostorlek 42
+					</li>
+					<li>
+						Datorer, elektronik, fotografering, bildbehandling
+					</li>
+					<li>
+						Linux, Windows, 
+					</li>
+				</ul>
             </div>
         </div>
     </div>
