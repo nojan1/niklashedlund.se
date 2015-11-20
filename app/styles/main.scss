@@ -36,11 +36,15 @@ $link-color: $secondary-text-color;
 }
 
 .section:last-child {
-	background-color: darken($primary-color-dark, 30%);
+	background-color: darken($primary-color-dark, 20%);
 	
 	.container {
 		padding:5px;	
 	}
+}
+
+#section1 {
+	background-color: lighten($primary-color-dark, 10%);
 }
 
 .section-topic {
