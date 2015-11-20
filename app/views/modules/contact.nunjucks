@@ -1,11 +1,11 @@
-<div class="container">
+<div class="container" id="contact-container">
 	<h1>Kontakta mig</h1>
 	
-	<span class="pull-left">
+	<span>
 		Via mail:  <a href="mailto:kontakt@niklashedlund.se">kontakt@niklashedlund.se</a>
 	</span>
 	
-	<ul class="list-inline pull-right social-icons">
+	<ul class="list-inline social-icons">
 		<li>
 			<a href="https://www.facebook.com/nojan.hedlund" target="_blank">
 				<img src="images/facebook.svg">

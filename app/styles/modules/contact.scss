@@ -1,5 +1,28 @@
-.social-icons {
-	img {
-		max-width: 30px;	
+#contact-container {
+	.social-icons {
+		img {
+			max-width: 30px;	
+		}
+		
+		float:right;
 	}
+	
+	span {
+		float:left;
+	}
+	
+	@media (max-width: 407px) {
+		h1 {
+			font-size:2em;	
+		}
+		
+		span {
+			float:none;
+		}
+		
+		.social-icons {
+			margin-top:4px;
+			float:none;	
+		}
+	} 
 }

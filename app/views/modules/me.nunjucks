@@ -4,10 +4,10 @@
             Me
         </h1>
         <div class="row">
-            <div class="col-md-6">
-                <img src="images/me.jpg" class="profilepic pull-right img-responsive">
+            <div class="col-sm-6">
+                <img src="images/me.jpg" class="profilepic img-responsive">
             </div>
-            <div class="col-md-6">
+            <div class="col-sm-6">
                 <h2>Niklas Hedlund</h2>
 				<ul>
 					<li>
@@ -20,13 +20,17 @@
 						Skostorlek 42
 					</li>
 					<li>
-						Datorer, elektronik, fotografering, bildbehandling
+						Datorer, Elektronik, Fotografering, Bildbehandling
 					</li>
 					<li>
-						Linux, Windows, 
+						Orientering
+					</li>
+					<li>
+						Linux, Windows
 					</li>
 				</ul>
             </div>
+			<div class="clearfix"></div>
         </div>
     </div>
 </div>

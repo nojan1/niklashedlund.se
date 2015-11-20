@@ -1,4 +1,8 @@
 .profilepic {
 	border-radius: 20px;
 	border:2px solid $primary-color-dark;
+	
+	@media(min-width: 992px) {
+		float:right;	
+	}
 }
