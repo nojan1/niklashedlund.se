@@ -3,6 +3,9 @@
         anchors: ['me', 'cv', 'portfolio', 'contact'],
         menu: '#menu',
         css3: true,
-        scrollingSpeed: 1000
+        scrollingSpeed: 1000,
+		//scrollBar: true,
+		//autoScrolling:false,
+		responsiveWidth: 680
      });
  });
