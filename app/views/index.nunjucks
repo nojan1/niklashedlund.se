@@ -9,6 +9,7 @@
 	  <meta charset="utf-8" />
 	  <title>niklashedlund.se</title>
 	  <meta name="viewport" content="width=device-width initial-scale=1" />
+	  <meta name="p:domain_verify" content="57dfeef5cfe68a9f68dc4d4aebf8f67f"/>
 	  <link rel="shortcut icon" href="favicon.ico" />
 
 	  <!-- build:css /styles/vendor.min.css -->
