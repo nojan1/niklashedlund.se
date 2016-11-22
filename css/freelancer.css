@@ -92,8 +92,11 @@
   text-align: left;
 }
 .profile-pic {
-  max-width: 400px;
   border: 2px solid #1684ae;
+}
+.profile-pic-container {
+  max-width: 300px;
+  margin: 0 auto;
 }
 body {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
