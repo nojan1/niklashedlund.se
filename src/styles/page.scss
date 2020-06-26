@@ -1,0 +1,50 @@
+@include keyframes(blink) {
+    0% { opacity: 0; }
+    45% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 1; }
+}
+
+@include keyframes(appear) {
+    0% { opacity: 0; }
+    90% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.page {
+    .heading {
+        color: $primary-dark;
+        font-size: 4rem;
+        transition: transform 1s ease-out;
+        text-align: center;
+    }
+
+    p {
+        font-size: 2rem;
+    }
+
+    .blink {
+        @include animation('blink 0.5s linear alternate infinite');
+    }
+
+    .intro {
+        p {
+            margin: 0;
+            padding-left: 10px;
+        }
+
+        p:first-child {
+            @include animation('appear 0.5s linear');
+        }
+
+        p:nth-child(2) {
+            @include animation('appear 1.5s linear');
+        }
+    }
+
+    .main {
+        max-width: 50vh;
+        height: 50vh;
+
+    }
+}
