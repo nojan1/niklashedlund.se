@@ -2,6 +2,8 @@ import { initTerminal } from './terminal';
  
 
 function onKeyDown(event){
+    event.stopPropagation();
+    
     document.querySelector('.intro').classList.toggle('hidden');
     document.querySelector('.main').classList.toggle('hidden');
 
