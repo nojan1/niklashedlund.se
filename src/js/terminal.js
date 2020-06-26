@@ -4,10 +4,13 @@ import welcome from '../content/welcome.json';
 import portfolio from '../content/portfolio.json';
 import me from '../content/me.json';
 
+import game from '../game';
+
 const commands = {
     'portfolio': terminal => terminal.writeContent(portfolio),
     'whoareyou': terminal => terminal.writeContent(me),
-    'skills': handleSkills
+    'skills': handleSkills,
+    'game': game
 };
 
 const terminal = {
@@ -70,8 +73,17 @@ const terminal = {
                 this.onDataDisposable = null;
             }
 
-            commands[command](this);
-            this.onDataDisposable = this.terminal.onData(this.onData.bind(this));
+            const response = commands[command](this);
+
+            const resetOnDataHandler = () => {
+                this.onDataDisposable = this.terminal.onData(this.onData.bind(this));
+            };
+
+            if(response?.finally)
+                response.finally(() => resetOnDataHandler());
+            else
+                resetOnDataHandler();
+   
         } else {
             this.terminal.writeln('Unknown command, maybe try help');
         }
