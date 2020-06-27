@@ -4,7 +4,7 @@ import { bootstrap } from './engine';
 const launchGame = function (terminal) {
     const assets = {
         scenes: [
-
+            
         ],
         dialogues: [
 
