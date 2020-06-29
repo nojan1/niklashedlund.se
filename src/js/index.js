@@ -9,6 +9,8 @@ function onKeyDown(event){
 
     initTerminal(document.querySelector('.terminal'));
     document.removeEventListener('keydown', onKeyDown);
+    document.removeEventListener('click', onKeyDown);
 }
 
 document.addEventListener('keydown', onKeyDown);
+document.addEventListener('click', onKeyDown);

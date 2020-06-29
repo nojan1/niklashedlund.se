@@ -1,4 +1,5 @@
 import { Terminal } from 'xterm';
+import { FitAddon } from 'xterm-addon-fit';
 
 import welcome from '../content/welcome.json';
 import portfolio from '../content/portfolio.json';
@@ -19,9 +20,14 @@ const terminal = {
     onDataDisposable: null,
     init: function (element) {
         this.terminal = new Terminal({ theme: { foreground: 'green' } });
+        const fitAddon = new FitAddon();
+
+        this.terminal.loadAddon(fitAddon);
         this.terminal.open(element);
         this.terminal.focus();
-        
+
+        fitAddon.fit();
+
         this.postInit();
     },
     prompt: function () {
