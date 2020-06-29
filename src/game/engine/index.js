@@ -1,25 +1,55 @@
+import { setContextGetter } from "./util/tagEngine";
+import { renderScene } from "./core/scene";
+import { parseSceneCommand } from "./core/commandParser";
 
 const game = {
     assets: {
-
+        scenes: {
+            'default_scene': {
+                default: true,
+                text: () => 'No scenes configured'
+            }
+        }
     },
     state: {
-        variables: { },
+        variables: {},
         currentScene: '',
     },
+    currentScene() { return this.assets.scenes[this.state.currentScene]; },
     onInput: null,
-    bootstrap: function(assets, onOutput = console.log){        
-        this.assets = {...this.assets, ...assets};
+    bootstrap: function (assets, onOutput = console.log) {
+        this.assets = { ...this.assets, ...assets };
         this.onOutput = onOutput;
 
+        setContextGetter(() => (
+            {
+                ...this.state
+            }
+        ));
+
+        this.findAndSetDefaultScene();
         onOutput('Engine loaded');
 
-        const gameEndPromise = new Promise(resolve => {
-            this.onInput = function(string) {
-                onOutput(string);
+        renderScene(this.currentScene(), onOutput);
 
-                if(string === 'exit')
+        const gameEndPromise = new Promise(resolve => {
+            this.onInput = function (string) {
+                if (string === 'exit'){
                     resolve();
+                    return;
+                }
+
+                const result = parseSceneCommand(this.currentScene(), this.state, string);
+
+                if(result.output)
+                    onOutput(result.output);
+
+                if(result.stateChange){
+                    this.state = {...this.state, ...result.stateChange};
+                    
+                    if(result.stateChange.currentScene)
+                        renderScene(this.currentScene(), onOutput);
+                }
             };
         });
 
@@ -27,6 +57,10 @@ const game = {
             onInput: this.onInput.bind(this),
             gameEndPromise
         };
+    },
+    findAndSetDefaultScene() {
+        const defaultScene = Object.entries(this.assets?.scenes ?? {}).find(([name, scene]) => scene.default);
+        this.state.currentScene = defaultScene[0];
     }
 };
 
