@@ -1,22 +1,24 @@
 {
-  "name": "niklashedlund-se",
-  "repository": {
-    "type": "git",
-    "url": ""
-  },
-  "version": "0.0.1",
-  "description": "niklashedlund.se description",
-  "devDependencies": {
-    "parcel-bundler": "^1.12.4",
-    "sass": "^1.26.9",
-    "scss": "^0.2.4"
-  },
+  "name": "niklashedlund.se",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "start": "parcel serve src/index.html",
-    "build": "parcel build src/index.html"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "@vitejs/devtools": "^0.7.6",
+    "node-html-parser": "^9.0.4",
+    "sass-embedded": "^1.105.1",
+    "typescript": "~6.0.2",
+    "vite": "^8.3.0",
+    "vite-plugin-html-include": "^1.5.2",
+    "vite-plugin-inspect": "^12.1.0"
   },
   "dependencies": {
-    "xterm": "^4.7.0",
-    "xterm-addon-fit": "^0.4.0"
+    "nord": "^0.2.1"
   }
 }

@@ -1,0 +1,38 @@
+@use "/node_modules/nord/src/sass/nord.scss";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: content-box;
+  color: nord.$nord4;
+}
+
+body {
+  background-color: nord.$nord0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding-top: 5rem;
+
+  #app {
+    max-width: 800px;
+
+    h1 {
+      color: nord.$nord5;
+
+      &::after {
+        display: inline-block;
+        content: '>';
+        color: nord.$nord9;
+        font-size: 0.9em;
+        margin-left: 0.5em;
+      }
+    }
+
+    p {
+      padding-top: 0.5em;
+      padding-bottom: 0.5em;
+    }
+  }
+}
